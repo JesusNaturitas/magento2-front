@@ -15,7 +15,12 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
+$black:    #202020 !default;
+
+$grey-dark: #808080;
+$grey: #adada9;
+$grey-light: #d2d2d2;
+$grey-lighter: #e4e3e3;
 
 $grays: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -34,14 +39,22 @@ $grays: map-merge(
   $grays
 );
 
-$blue:    #007bff !default;
+$blue: #79a7bf;
+$blue-dark: #425b68;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
+$pink-light: #ee7d6d;
+$pink: #f8715b;
+$pink-dark: #88443b;
 $red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
+$orange-light: #eea770;
+$orange: #fdb72a;
+$orange-dark: #8f6718;
+$orange-darker: #815e43;
 $yellow:  #ffc107 !default;
-$green:   #28a745 !default;
+$green: #47bd9b;
+$green-dark: #329b7d;
+$green-darker: #116153;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
