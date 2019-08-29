@@ -8,7 +8,6 @@
 $font-base: "sofia_pro";
 
 @font-face {
-
 	font-family: $font-base;
 	src: url('../fonts/sofiapro-black-webfont.woff2') format('woff2'),
 	url('../fonts/sofiapro-black-webfont.woff') format('woff');
@@ -51,7 +50,7 @@ $font-base: "sofia_pro";
 //@import "grid";
 //@import "tables";
 //@import "forms";
-//@import "buttons";
+@import "buttons";
 //@import "transitions";
 //@import "dropdown";
 //@import "button-group";
