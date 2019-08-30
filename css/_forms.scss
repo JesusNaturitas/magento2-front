@@ -328,3 +328,23 @@ textarea.form-control {
   //  }
   //}
 }
+
+.floating-label {
+  position: relative;
+
+  label {
+    display: none; // Browsers that do not support :placeholder-shown will show just the placeholder (https://caniuse.com/#feat=css-placeholder-shown)
+  }
+
+  .form-control:not(:placeholder-shown) {
+    padding-top: 1.25rem;
+
+    ~ label {
+      display: inline-block;
+      position: absolute;
+      top: .25rem;
+      left: calc(#{$input-padding-x} + #{$input-border-width});
+      font-size: .75rem;
+    }
+  }
+}

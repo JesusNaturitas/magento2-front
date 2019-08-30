@@ -381,6 +381,19 @@ textarea.form-control.is-invalid {
 .custom-control-input.is-invalid:focus:not(:checked) ~ .custom-control-label::before {
   border-color: #f8715b; }
 
+.floating-label {
+  position: relative; }
+  .floating-label label {
+    display: none; }
+  .floating-label .form-control:not(:placeholder-shown) {
+    padding-top: 1.25rem; }
+    .floating-label .form-control:not(:placeholder-shown) ~ label {
+      display: inline-block;
+      position: absolute;
+      top: .25rem;
+      left: calc(1rem + 1px);
+      font-size: .75rem; }
+
 .btn {
   display: inline-block;
   font-weight: 500;
