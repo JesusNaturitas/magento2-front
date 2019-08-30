@@ -24,6 +24,20 @@
   src: url("/fonts/sofiapro-regular-webfont.woff2") format("woff2"), url("/fonts/sofiapro-regular-webfont.woff") format("woff");
   font-weight: 400;
   font-style: normal; }
+.btn .btn_doing,
+.btn .btn_done {
+  display: none; }
+.btn.doing .btn_doing {
+  display: block; }
+.btn.doing .btn_default,
+.btn.doing .btn_done {
+  display: none; }
+.btn.done .btn_done {
+  display: block; }
+.btn.done .btn_default,
+.btn.done .btn_doing {
+  display: none; }
+
 *,
 *::before,
 *::after {
@@ -693,6 +707,24 @@ fieldset:disabled a.btn {
     .custom-select {
       transition: none; } }
 
+@keyframes spinner-border {
+  to {
+    transform: rotate(360deg); } }
+.spinner-border {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: text-bottom;
+  border: 0.15em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spinner-border .75s linear infinite; }
+
+@keyframes spinner-grow {
+  0% {
+    transform: scale(0); }
+  50% {
+    opacity: 1; } }
 .custom-arrow-prev,
 .custom-arrow-next {
   padding: 0;

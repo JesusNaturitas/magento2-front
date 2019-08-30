@@ -39,6 +39,36 @@ $font-base: "sofia_pro";
 	font-style: normal;
 }
 
+
+.btn {
+	.btn_doing,
+	.btn_done {
+		display: none;
+	}
+
+	&.doing {
+		.btn_doing {
+			display: block;
+		}
+
+		.btn_default,
+		.btn_done {
+			display: none;
+		}
+	}
+
+	&.done {
+		.btn_done {
+			display: block;
+		}
+
+		.btn_default,
+		.btn_doing {
+			display: none;
+		}
+	}
+}
+
 @import "functions";
 @import "variables";
 @import "mixins";
@@ -73,7 +103,7 @@ $font-base: "sofia_pro";
 //@import "tooltip";
 //@import "popover";
 //@import "carousel";
-//@import "spinners";
+@import "spinners";
 //@import "utilities";
 //@import "print";
 
