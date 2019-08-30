@@ -439,8 +439,6 @@ textarea.form-control.is-invalid {
     text-decoration: none; }
   .btn:focus, .btn.focus {
     outline: 0; }
-  .btn.disabled, .btn:disabled {
-    opacity: 0.65; }
 
 a.btn.disabled,
 fieldset:disabled a.btn {
@@ -448,50 +446,35 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #47bd9b;
-  border-color: #47bd9b; }
+  background-color: #47bd9b; }
   .btn-primary:hover {
     color: #fff;
-    background-color: #3ba385;
-    border-color: #379a7d; }
+    background-color: #329b7d; }
   .btn-primary.disabled, .btn-primary:disabled {
     color: #fff;
-    background-color: #47bd9b;
-    border-color: #47bd9b; }
+    background-color: #47bd9b; }
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #379a7d;
-    border-color: #349076; }
+    background-color: #329b7d;
+    border-color: transparent; }
 
 .btn-outline-primary {
   color: #47bd9b;
   border-color: #47bd9b; }
   .btn-outline-primary:hover {
-    color: #fff;
-    background-color: #47bd9b;
-    border-color: #47bd9b; }
-  .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-    color: #47bd9b;
-    background-color: transparent; }
+    color: #329b7d;
+    border-color: #329b7d; }
   .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #47bd9b;
-    border-color: #47bd9b; }
+    color: #329b7d;
+    border-color: #329b7d; }
 
 .btn-outline-secondary {
   color: #202020;
-  border-color: #202020; }
+  border-color: #47bd9b; }
   .btn-outline-secondary:hover {
-    color: #fff;
-    background-color: #202020;
-    border-color: #202020; }
-  .btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
-    color: #202020;
-    background-color: transparent; }
+    border-color: #329b7d; }
   .btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .show > .btn-outline-secondary.dropdown-toggle {
-    color: #fff;
-    background-color: #202020;
-    border-color: #202020; }
+    border-color: #329b7d; }
 
 .custom-control {
   position: relative;

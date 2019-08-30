@@ -3,16 +3,16 @@
 // Easily pump out default styles, as well as :hover, :focus, :active,
 // and disabled options for all buttons
 
-@mixin button-variant($background, $border, $hover-background: darken($background, 7.5%), $hover-border: darken($border, 10%), $active-background: darken($background, 10%), $active-border: darken($border, 12.5%)) {
+@mixin button-variant($background, $border: transparent, $hover-background: darken($background, 7.5%), $hover-border: transparent, $active-background: darken($background, 10%), $active-border: transparent) {
   color: color-yiq($background);
   @include gradient-bg($background);
-  border-color: $border;
+  //border-color: $border;
   //@include box-shadow($btn-box-shadow);
 
   @include hover {
     color: color-yiq($hover-background);
     @include gradient-bg($hover-background);
-    border-color: $hover-border;
+    //border-color: $hover-border;
   }
 
   &:focus,
@@ -30,10 +30,10 @@
   &:disabled {
     color: color-yiq($background);
     background-color: $background;
-    border-color: $border;
+    //border-color: $border;
     // Remove CSS gradients if they're enabled
     @if $enable-gradients {
-      background-image: none;
+      //background-image: none;
     }
   }
 
@@ -43,7 +43,7 @@
     color: color-yiq($active-background);
     background-color: $active-background;
     @if $enable-gradients {
-      background-image: none; // Remove the gradient for the pressed/active state
+      //background-image: none; // Remove the gradient for the pressed/active state
     }
     border-color: $active-border;
 
@@ -58,33 +58,31 @@
   }
 }
 
-@mixin button-outline-variant($color, $color-hover: color-yiq($color), $active-background: $color, $active-border: $color) {
-  color: $color;
-  border-color: $color;
+@mixin button-outline-variant($map) {
+  color: map-get($map, color);
+  border-color: map-get($map, border-color);
 
   @include hover {
-    color: $color-hover;
-    background-color: $active-background;
-    border-color: $active-border;
+    color: map-get($map, hover-color);
+    border-color: map-get($map, hover-border-color);
   }
 
-  &:focus,
-  &.focus {
-    //box-shadow: 0 0 0 $btn-focus-width rgba($color, .5);
-  }
-
-  &.disabled,
-  &:disabled {
-    color: $color;
-    background-color: transparent;
-  }
+  //&:focus,
+  //&.focus {
+  //  //box-shadow: 0 0 0 $btn-focus-width rgba($color, .5);
+  //}
+  //
+  //&.disabled,
+  //&:disabled {
+  //  color: $color;
+  //  background-color: transparent;
+  //}
 
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
   .show > &.dropdown-toggle {
-    color: color-yiq($active-background);
-    background-color: $active-background;
-    border-color: $active-border;
+    color: map-get($map, active-color);
+    border-color: map-get($map, active-border-color);
 
     &:focus {
       // Avoid using mixin so we can pass custom focus shadow properly

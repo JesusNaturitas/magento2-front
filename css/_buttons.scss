@@ -31,7 +31,7 @@
   // Disabled comes first so active can properly restyle
   &.disabled,
   &:disabled {
-    opacity: $btn-disabled-opacity;
+    //opacity: $btn-disabled-opacity;
     //@include box-shadow(none);
   }
 
@@ -57,18 +57,38 @@ fieldset:disabled a.btn {
 //
 
 $btn-colors: (
-  "primary":    $green,
+  "primary": (
+    "background-color": $green,
+    "hover-background-color": $green-dark,
+    "active-background-color": $green-dark,
+  )
 );
 
 @each $color, $value in $btn-colors {
   .btn-#{$color} {
-    @include button-variant($value, $value);
+    @include button-variant(
+      $background: map-get($value, "background-color"),
+      $hover-background: map-get($value, "hover-background-color"),
+      $active-background: map-get($value, "active-background-color")
+    );
   }
 }
 
 $btn-outline-colors: (
-  "primary":    $green,
-  "secondary":  $black,
+  primary: (
+    color: $green,
+    border-color: $green,
+    hover-color: $green-dark,
+    hover-border-color: $green-dark,
+    active-color: $green-dark,
+    active-border-color: $green-dark,
+  ),
+  secondary: (
+    color: $black,
+    border-color: $green,
+    hover-border-color: $green-dark,
+    active-border-color: $green-dark,
+  )
 );
 
 @each $color, $value in $btn-outline-colors {
