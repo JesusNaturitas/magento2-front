@@ -48,6 +48,12 @@
   @return $string;
 }
 
+@function svg($icon, $fill: $black) {
+  $icon: str-replace($icon, 'fill=""', 'fill="#{$fill}"');
+  $icon: str-replace($icon, "#", "%23");
+  @return url('data:image/svg+xml;utf8,#{$icon}');
+}
+
 // Color contrast
 @function color-yiq($color, $dark: $yiq-text-dark, $light: $yiq-text-light) {
   $r: red($color);

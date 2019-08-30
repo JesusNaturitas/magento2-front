@@ -1,0 +1,52 @@
+.custom-arrow-prev,
+.custom-arrow-next {
+	padding: 0;
+	background: transparent;
+	line-height: 0;
+	border: 0;
+
+	&:hover {
+		fill: $green;
+	}
+
+	&:disabled {
+		fill: $grey-light;
+	}
+}
+
+.custom-arrow-prev svg {
+	transform: rotate(180deg);
+}
+
+.custom-arrow-shadow-prev,
+.custom-arrow-shadow-next {
+	line-height: 0;
+	border: 0;
+	width: 2.125rem;
+	height: 2.125rem;
+	border: 1px solid transparent;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.13);
+	border-radius: 50%;
+	background-color: $white;
+	fill: $green;
+	position: relative;
+
+	&:not(:disabled):hover {
+		border-color: $green;
+	}
+
+	&:disabled {
+		fill: $grey-light;
+	}
+
+	svg {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.custom-arrow-shadow-prev svg {
+	transform: translate(-50%, -50%) rotate(180deg);
+}

@@ -101,7 +101,8 @@ img {
 
 svg {
   overflow: hidden;
-  vertical-align: middle; }
+  vertical-align: middle;
+  height: 1em; }
 
 table {
   border-collapse: collapse; }
@@ -691,5 +692,49 @@ fieldset:disabled a.btn {
     .custom-file-label,
     .custom-select {
       transition: none; } }
+
+.custom-arrow-prev,
+.custom-arrow-next {
+  padding: 0;
+  background: transparent;
+  line-height: 0;
+  border: 0; }
+  .custom-arrow-prev:hover,
+  .custom-arrow-next:hover {
+    fill: #47bd9b; }
+  .custom-arrow-prev:disabled,
+  .custom-arrow-next:disabled {
+    fill: #d2d2d2; }
+
+.custom-arrow-prev svg {
+  transform: rotate(180deg); }
+
+.custom-arrow-shadow-prev,
+.custom-arrow-shadow-next {
+  line-height: 0;
+  border: 0;
+  width: 2.125rem;
+  height: 2.125rem;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.13);
+  border-radius: 50%;
+  background-color: #fff;
+  fill: #47bd9b;
+  position: relative; }
+  .custom-arrow-shadow-prev:not(:disabled):hover,
+  .custom-arrow-shadow-next:not(:disabled):hover {
+    border-color: #47bd9b; }
+  .custom-arrow-shadow-prev:disabled,
+  .custom-arrow-shadow-next:disabled {
+    fill: #d2d2d2; }
+  .custom-arrow-shadow-prev svg,
+  .custom-arrow-shadow-next svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.custom-arrow-shadow-prev svg {
+  transform: translate(-50%, -50%) rotate(180deg); }
 
 /*# sourceMappingURL=bootstrap.css.map */
