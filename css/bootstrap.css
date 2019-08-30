@@ -331,6 +331,9 @@ textarea.form-control.is-valid {
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem); }
 
+.custom-select.is-valid ~ .valid-feedback {
+  display: block; }
+
 .custom-control-input.is-valid ~ .custom-control-label {
   color: #47bd9b; }
   .custom-control-input.is-valid ~ .custom-control-label::before {
@@ -365,6 +368,11 @@ textarea.form-control.is-valid {
 textarea.form-control.is-invalid {
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem); }
+
+.custom-select.is-invalid {
+  border-color: #f8715b; }
+  .custom-select.is-invalid ~ .invalid-feedback {
+    display: block; }
 
 .custom-control-input.is-invalid ~ .custom-control-label {
   color: #f8715b; }
@@ -542,6 +550,36 @@ fieldset:disabled a.btn {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e"); }
 .custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before {
   background-color: rgba(71, 189, 155, 0.5); }
+
+.custom-select {
+  display: inline-block;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 2rem 0.375rem 1rem;
+  font-weight: bold;
+  color: #202020;
+  vertical-align: middle;
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%2347bd9b' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 1rem center/8px 10px;
+  background-color: #fff;
+  border: 1px solid #47bd9b;
+  border-radius: 25px;
+  box-shadow: 0 2px 1px 0 rgba(175, 175, 175, 0.36);
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none; }
+  .custom-select:hover {
+    border-color: #329b7d;
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23329b7d' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 1rem center/8px 10px;
+    background-color: #fff; }
+  .custom-select:focus {
+    outline: 0; }
+    .custom-select:focus::-ms-value {
+      color: #202020;
+      background-color: #fff; }
+  .custom-select:disabled {
+    color: #6c757d;
+    background-color: #e9ecef; }
+  .custom-select::-ms-expand {
+    display: none; }
 
 .custom-range {
   width: 100%;
