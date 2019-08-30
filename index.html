@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<style>
+		body { padding: 10px; }
+	</style>
+</head>
+<body>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+<hr>
+
+<p>Paragraph: <b>b</b>, <strong>strong</strong>, <a href="#">link</a>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam dolores ex iste magnam omnis quia tempore voluptatum. Aperiam consectetur dolorem doloremque dolorum earum illo odit pariatur placeat quaerat? Esse.</p>
+
+<ol>
+	<li>Ordered list item 1</li>
+	<li>Ordered list item 2</li>
+	<li>Ordered list item 3</li>
+</ol>
+
+<ul>
+	<li>Unordered list item 1</li>
+	<li>Unordered list item 2</li>
+	<li>Unordered list item 3</li>
+</ul>
+
+<blockquote>Blockquote: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam atque error harum id laudantium minus nam odit! Hic modi, temporibus? Aliquam dolores harum, illo libero molestiae odit quae rem veniam!</blockquote>
+
+<hr>
+
+<form>
+	<div class="form-group">
+		<label for="exampleInputEmail1">Example input</label>
+		<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Placeholder">
+		<small class="form-text text-muted">Example form text</small>
+	</div>
+
+	<div class="form-group">
+		<label for="exampleInputEmail1">Example input</label>
+		<input type="email" class="form-control is-valid" id="exampleInputEmail1" placeholder="Placeholder">
+		<div class="valid-feedback">This is valid feedback</div>
+	</div>
+
+	<div class="form-group">
+		<label for="exampleInputEmail1">Example input</label>
+		<input type="email" class="form-control is-invalid" id="exampleInputEmail1" placeholder="Placeholder">
+		<div class="invalid-feedback">This is invalid feedback</div>
+	</div>
+
+	<hr>
+
+	<div class="form-group floating-label">
+		<input type="email" class="form-control" id="floatingLabel1" placeholder="Floating label">
+		<label for="floatingLabel1">Floating label</label>
+		<small class="form-text text-muted">Example form text</small>
+	</div>
+
+	<div class="form-group floating-label">
+		<input type="email" class="form-control is-invalid" id="floatingLabel3" placeholder="Floating label">
+		<label for="floatingLabel3">Floating label</label>
+		<div class="invalid-feedback">This is invalid feedback</div>
+	</div>
+
+	<hr>
+
+	<div class="form-group">
+		<label for="exampleFormControlTextarea1">Example textarea</label>
+		<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+	</div>
+
+	<div class="form-group">
+		<label for="exampleFormControlTextarea1">Example textarea</label>
+		<textarea class="form-control is-valid" id="exampleFormControlTextarea1" rows="3"></textarea>
+		<div class="valid-feedback">This is valid feedback</div>
+	</div>
+
+	<div class="form-group">
+		<label for="exampleFormControlTextarea1">Example textarea</label>
+		<textarea class="form-control is-invalid" id="exampleFormControlTextarea1" rows="3"></textarea>
+		<div class="invalid-feedback">This is invalid feedback</div>
+	</div>
+
+	<hr>
+
+	<div class="form-group floating-label">
+		<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Floating label"></textarea>
+		<label for="exampleFormControlTextarea1">Floating label</label>
+	</div>
+
+	<div class="form-group floating-label">
+		<textarea class="form-control is-invalid" id="exampleFormControlTextarea1" rows="3" placeholder="Floating label"></textarea>
+		<label for="exampleFormControlTextarea1">Floating label</label>
+		<div class="invalid-feedback">This is invalid feedback</div>
+	</div>
+
+	<hr>
+
+	<div class="form-group">
+		<label for="exampleFormControlSelect1">Example select</label>
+		<select class="form-control" id="exampleFormControlSelect1">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+		</select>
+	</div>
+
+	<div class="form-group">
+		<label for="exampleFormControlSelect2">Example select</label>
+		<select class="form-control is-invalid" id="exampleFormControlSelect2">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+		</select>
+		<div class="invalid-feedback">This is invalid feedback</div>
+	</div>
+
+	<hr>
+
+	<div class="form-group">
+		<select class="custom-select" id="exampleCustomSelect1">
+			<option value="1">1</option>
+			<option>...</option>
+			<option value="99">99</option>
+		</select>
+	</div>
+
+	<hr>
+
+	<div class="form-group">
+		<label for="customRange1">Example range</label>
+		<input type="range" class="custom-range" id="customRange1">
+	</div>
+
+	<hr>
+
+	<div class="custom-control custom-checkbox">
+		<input type="checkbox" class="custom-control-input" id="customCheck1">
+		<label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+	</div>
+
+	<div class="custom-control custom-checkbox">
+		<input type="checkbox" class="custom-control-input is-invalid" id="customCheck2">
+		<label class="custom-control-label" for="customCheck2">Check this custom checkbox</label>
+		<div class="invalid-feedback">This is invalid feedback</div>
+	</div>
+
+	<div class="custom-control custom-checkbox">
+		<input type="checkbox" class="custom-control-input" id="customCheckDisabled1" disabled>
+		<label class="custom-control-label" for="customCheckDisabled1">Check this custom checkbox</label>
+	</div>
+
+	<hr>
+
+	<div class="custom-control custom-radio">
+		<input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+		<label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+	</div>
+
+	<div class="custom-control custom-radio">
+		<input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+		<label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+	</div>
+
+	<div class="custom-control custom-radio">
+		<input type="radio" id="customRadio3" name="customRadio" class="custom-control-input is-invalid">
+		<label class="custom-control-label" for="customRadio3">Or toggle this other custom radio</label>
+		<div class="invalid-feedback">This is invalid feedback</div>
+	</div>
+
+	<div class="custom-control custom-radio">
+		<input type="radio" name="radioDisabled" id="customRadioDisabled2" class="custom-control-input" disabled>
+		<label class="custom-control-label" for="customRadioDisabled2">Toggle this custom radio</label>
+	</div>
+
+	<hr>
+
+	<p><a href="https://getbootstrap.com/docs/4.3/components/forms/#server-side">https://getbootstrap.com/docs/4.3/components/forms/#server-side</a></p>
+</form>
+
+<hr>
+
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-primary" disabled>Primary disabled</button>
+
+<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-primary" disabled>Primary disabled</button>
+
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+
+<hr>
+
+<button type="button" class="btn btn-primary">
+	<span class="btn_default">
+		Default
+	</span>
+	<span class="btn_doing spinner-border"></span>
+	<span class="btn_done">
+		Done
+	</span>
+</button>
+
+<button type="button" class="btn btn-primary">
+	<span class="btn_default">
+		Default
+	</span>
+	<span class="btn_doing spinner-border"></span>
+	<span class="btn_done">
+		Done
+	</span>
+</button>
+
+<button type="button" class="btn btn-primary doing">
+	<span class="btn_default">
+		Default
+	</span>
+	<span class="btn_doing spinner-border"></span>
+	<span class="btn_done">
+		Done
+	</span>
+</button>
+
+<button type="button" class="btn btn-primary done">
+	<span class="btn_default">
+		Default
+	</span>
+	<span class="btn_doing spinner-border"></span>
+	<span class="btn_done">
+		Done
+	</span>
+</button>
+
+<hr>
+
+<button type="button" class="btn btn-outline-primary">
+	<span class="btn_default">
+		Default
+	</span>
+	<span class="btn_doing spinner-border"></span>
+	<span class="btn_done">
+		Done
+	</span>
+</button>
+
+<button type="button" class="btn btn-outline-primary doing">
+	<span class="btn_default">
+		Default
+	</span>
+	<span class="btn_doing spinner-border"></span>
+	<span class="btn_done">
+		Done
+	</span>
+</button>
+
+<button type="button" class="btn btn-outline-primary done">
+	<span class="btn_default">
+		Default
+	</span>
+	<span class="btn_doing spinner-border"></span>
+	<span class="btn_done">
+		Done
+	</span>
+</button>
+
+<hr>
+
+<button type="button" class="custom-arrow-prev">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 15"><path d="M6.64 7.503L.272 1.891A.767.767 0 0 1 0 1.311c0-.22.096-.426.272-.58L.83.24A.992.992 0 0 1 1.489 0c.249 0 .482.086.658.24L9.73 6.92a.768.768 0 0 1 .271.582.767.767 0 0 1-.271.583L2.154 14.76a.993.993 0 0 1-.658.24.994.994 0 0 1-.66-.24l-.557-.49a.754.754 0 0 1 0-1.161L6.64 7.503z"></path></svg>
+</button>
+
+<button type="button" class="custom-arrow-next">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 15"><path d="M6.64 7.503L.272 1.891A.767.767 0 0 1 0 1.311c0-.22.096-.426.272-.58L.83.24A.992.992 0 0 1 1.489 0c.249 0 .482.086.658.24L9.73 6.92a.768.768 0 0 1 .271.582.767.767 0 0 1-.271.583L2.154 14.76a.993.993 0 0 1-.658.24.994.994 0 0 1-.66-.24l-.557-.49a.754.754 0 0 1 0-1.161L6.64 7.503z"></path></svg>
+</button>
+
+<button type="button" class="custom-arrow-prev" disabled>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 15"><path d="M6.64 7.503L.272 1.891A.767.767 0 0 1 0 1.311c0-.22.096-.426.272-.58L.83.24A.992.992 0 0 1 1.489 0c.249 0 .482.086.658.24L9.73 6.92a.768.768 0 0 1 .271.582.767.767 0 0 1-.271.583L2.154 14.76a.993.993 0 0 1-.658.24.994.994 0 0 1-.66-.24l-.557-.49a.754.754 0 0 1 0-1.161L6.64 7.503z"></path></svg>
+</button>
+
+<button type="button" class="custom-arrow-next" disabled>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 15"><path d="M6.64 7.503L.272 1.891A.767.767 0 0 1 0 1.311c0-.22.096-.426.272-.58L.83.24A.992.992 0 0 1 1.489 0c.249 0 .482.086.658.24L9.73 6.92a.768.768 0 0 1 .271.582.767.767 0 0 1-.271.583L2.154 14.76a.993.993 0 0 1-.658.24.994.994 0 0 1-.66-.24l-.557-.49a.754.754 0 0 1 0-1.161L6.64 7.503z"></path></svg>
+</button>
+
+<hr>
+
+<button type="button" class="custom-arrow-shadow-prev">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 15"><path d="M6.64 7.503L.272 1.891A.767.767 0 0 1 0 1.311c0-.22.096-.426.272-.58L.83.24A.992.992 0 0 1 1.489 0c.249 0 .482.086.658.24L9.73 6.92a.768.768 0 0 1 .271.582.767.767 0 0 1-.271.583L2.154 14.76a.993.993 0 0 1-.658.24.994.994 0 0 1-.66-.24l-.557-.49a.754.754 0 0 1 0-1.161L6.64 7.503z"></path></svg>
+</button>
+
+<button type="button" class="custom-arrow-shadow-next">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 15"><path d="M6.64 7.503L.272 1.891A.767.767 0 0 1 0 1.311c0-.22.096-.426.272-.58L.83.24A.992.992 0 0 1 1.489 0c.249 0 .482.086.658.24L9.73 6.92a.768.768 0 0 1 .271.582.767.767 0 0 1-.271.583L2.154 14.76a.993.993 0 0 1-.658.24.994.994 0 0 1-.66-.24l-.557-.49a.754.754 0 0 1 0-1.161L6.64 7.503z"></path></svg>
+</button>
+
+<button type="button" class="custom-arrow-shadow-prev" disabled>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 15"><path d="M6.64 7.503L.272 1.891A.767.767 0 0 1 0 1.311c0-.22.096-.426.272-.58L.83.24A.992.992 0 0 1 1.489 0c.249 0 .482.086.658.24L9.73 6.92a.768.768 0 0 1 .271.582.767.767 0 0 1-.271.583L2.154 14.76a.993.993 0 0 1-.658.24.994.994 0 0 1-.66-.24l-.557-.49a.754.754 0 0 1 0-1.161L6.64 7.503z"></path></svg>
+</button>
+
+<button type="button" class="custom-arrow-shadow-next" disabled>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 15"><path d="M6.64 7.503L.272 1.891A.767.767 0 0 1 0 1.311c0-.22.096-.426.272-.58L.83.24A.992.992 0 0 1 1.489 0c.249 0 .482.086.658.24L9.73 6.92a.768.768 0 0 1 .271.582.767.767 0 0 1-.271.583L2.154 14.76a.993.993 0 0 1-.658.24.994.994 0 0 1-.66-.24l-.557-.49a.754.754 0 0 1 0-1.161L6.64 7.503z"></path></svg>
+</button>
+</body>
+</html>
